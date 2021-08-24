@@ -15,4 +15,5 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OrcamentosController;
 
 Route::get('/',[OrcamentosController::class,'index']);
+Route::post('/orcamentos',[OrcamentosController::class,'store']);
 Route::get('/consulta',[OrcamentosController::class,'consulta']);

@@ -3,7 +3,7 @@ header .navbar-dark .navbar-toggler {
     border: 1px solid #fff;
 }
 header .navbar-dark .navbar-nav .nav-link{
-    color: #087cfc;
+    color: #155724;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -14,13 +14,14 @@ header .navbar-dark .navbar-nav .nav-link{
 
 }
 #conteudo h1{
-    color:#000;
+    color:#155724;
     font-weight: 300;
     
 }
 
+
 #formulario .btn-warning{
-    color: #087cfc;
+    color: #155724;
 }
 /*conteudo 2*/
 #conteudo2{
@@ -31,5 +32,14 @@ header .navbar-dark .navbar-nav .nav-link{
     font-weight: 300;
 }
 #btn2{
-    color:#087cfc;
+    color:#155724;
 }
+.msg {
+	background-color: #D4EDDA;
+	color: #155724;
+	border: 1px solid #C3E6CB;
+	width: 100%;
+	margin-bottom: 0;
+	text-align: center;
+	padding: 10px;
+  }

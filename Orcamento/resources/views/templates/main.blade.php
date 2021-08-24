@@ -20,8 +20,8 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-warning ">
             <div class="container">
 
-                <a href="index.html">
-                    <img cla class="navbar-brand" src="img/logo.png" alt="logo orçamento">
+                <a href="/">
+                    <img  cla class="navbar-brand" src="img/logo.png" alt="logo orçamento">
                 </a>
 
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
@@ -46,6 +46,16 @@
 
         </nav>
     </header> <!--fim cabeçaho-->
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                @if(session('msg'))
+                    <p class="msg">{{ session('msg') }}</p>
+                 @endif
+            
+            </div>
+        </div>
+    </main>
     @yield('content')
     
 </body>
