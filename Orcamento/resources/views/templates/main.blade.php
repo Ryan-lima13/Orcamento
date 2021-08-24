@@ -31,11 +31,11 @@
                 <div class="collapse navbar-collapse" id="nav-principal">
                     <ul class="navbar-nav mr-auto ">
                         <li class="nav-item">
-                            <a class="nav-link " href="index.html">Cadastro</a>
+                            <a class="nav-link " href="/">Cadastro</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="consulta.html" target="_self">Consulta</a>
+                            <a class="nav-link" href="/consulta" target="_self">Consulta</a>
                         </li>
 
                     </ul>
