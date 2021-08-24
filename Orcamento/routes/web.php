@@ -20,4 +20,5 @@ Route::post('/orcamentos',[OrcamentosController::class,'store']);
 Route::get('/consulta',[OrcamentosController::class,'consulta']);
 Route::get('/{id}',[OrcamentosController::class,'edit']);
 Route::put('/orcamentos/update/{id}',[OrcamentosController::class,'update']);
+Route::delete('orcamentos/{id}',[OrcamentosController::class,'destroy']);
 

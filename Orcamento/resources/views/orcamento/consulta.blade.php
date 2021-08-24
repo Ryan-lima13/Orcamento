@@ -39,6 +39,16 @@
                              <i class="fas fa-edit fa-lg text-info"></i>
                              
                         </a></td>
+                        <td>
+                            <form action="/orcamentos/{{$orcamento->id}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-light">
+                                    <i class="fas fa-trash-alt fa-lg text-danger"></i>
+                                </button>
+        
+                            </form>
+                        </td>
                             
                         
                         

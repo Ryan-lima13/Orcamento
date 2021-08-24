@@ -37,4 +37,9 @@ class OrcamentosController extends Controller
         Orcamento::findOrFail($request->id)->update($request->all());
         return redirect('/')->with('msg','Orçamento Editado com sucesso!');
     }
+
+    public function destroy($id){
+        $orcamento = Orcamento::findOrFail($id)->delete();
+        return redirect('/')->with('msg','Orçamento exluida com sucesso!');
+    }
 }
