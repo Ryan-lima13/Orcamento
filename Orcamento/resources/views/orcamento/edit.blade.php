@@ -1,26 +1,13 @@
-@extends('templates.main')
+@extends('templates.main') 
 
-@section('title','Orçamento Pessoal')
+@section('title','Editar');
 
 @section('content')
 
-<section id="conteudo"><!--inicio conteudo-->
-    <div class="row ">
-        <div class="col ">
-            
-                <h1 class="display-4 text-center">Registro de Novas Despesa</h1>
-            
-
-        </div>
-
-        
-
-    </div>
-</section><!--fim conteudo-->
-
-<section id="formulario"><!-- inicio formulário-->
-    <form action="/orcamentos" method="POST">
+<section id="formulario" class="mt-5"><!-- inicio formulário-->
+    <form action="/orcamentos/update/{{$orcamento->id}}" method="POST">
         @csrf
+        @method('PUT')
         <div class="container">
             <div class="row">
                 <div class="col-md-2 ">
@@ -69,7 +56,7 @@
                 </div>
                 <div class="col-md-2">
                     <button class="btn btn-warning" type="submit" onclick="cadastrarDespesa()">
-                        <i class="fas fa-plus" id="btn"></i>
+                        editar
                     </button>
                 </div>
             </div>
@@ -78,5 +65,7 @@
     </form>
 
 </section><!-- fim formulario-->
+
+
     
 @endsection

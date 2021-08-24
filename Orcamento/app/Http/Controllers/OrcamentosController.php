@@ -12,7 +12,8 @@ class OrcamentosController extends Controller
     }
 
     public function consulta(){
-        return view('orcamento.consulta');
+        $orcamentos = Orcamento::all();
+        return view('orcamento.consulta',['orcamentos'=>$orcamentos]);
     }
     public function store(Request $request){
         $orcamento = new Orcamento;
@@ -25,5 +26,15 @@ class OrcamentosController extends Controller
 
         $orcamento->save();
         return redirect('/')->with('msg','Orçamento salvo com sucesso!');
+    }
+
+    public function edit($id){
+        $orcamento = Orcamento::findOrFail($id);
+        return view('orcamento.edit',['orcamento'=>$orcamento]);
+    }
+
+    public function update(Request $request){
+        Orcamento::findOrFail($request->id)->update($request->all());
+        return redirect('/')->with('msg','Orçamento Editado com sucesso!');
     }
 }

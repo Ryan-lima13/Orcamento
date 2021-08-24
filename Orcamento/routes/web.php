@@ -13,7 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 use App\Http\Controllers\OrcamentosController;
+use App\Models\Orcamento;
 
 Route::get('/',[OrcamentosController::class,'index']);
 Route::post('/orcamentos',[OrcamentosController::class,'store']);
 Route::get('/consulta',[OrcamentosController::class,'consulta']);
+Route::get('/{id}',[OrcamentosController::class,'edit']);
+Route::put('/orcamentos/update/{id}',[OrcamentosController::class,'update']);
+

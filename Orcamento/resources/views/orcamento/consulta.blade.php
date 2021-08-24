@@ -6,7 +6,7 @@
 
 <section id="conteudo2"><!--inicio conteudo -->
     <div class="container">
-        <h1 class="display-4">Consulta de despesas</h1>
+        <h1 class="display-4 text-center">Consulta de despesas</h1>
 
     </div>
 
@@ -19,16 +19,32 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Data</th>
+                            <th>Ano</th>
                             <th>Tipo</th>
                             <th>Descrição</th>
                             <th>Valor</th>
+                            <th>Editar</th>
+                            <th>Apagar</th>
                         </tr>
                         
                     </thead>
+                    @foreach ($orcamentos as $orcamento)
                     <tbody>
+                     
+                        <td>{{$orcamento->ano}}</td>
+                        <td>{{$orcamento->tipo}}</td>
+                        <td>{{$orcamento->descricao}}</td>
+                         <td>{{$orcamento->valor}}</td>
+                         <td><a href="/{{$orcamento->id}}" class="btn btn-light">
+                             <i class="fas fa-edit fa-lg text-info"></i>
+                             
+                        </a></td>
+                            
+                        
+                        
                         
                     </tbody>
+                    @endforeach
 
                 </table>
 
