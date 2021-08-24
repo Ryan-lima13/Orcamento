@@ -1,0 +1,35 @@
+/* barra de navegação*/
+header .navbar-dark .navbar-toggler {
+    border: 1px solid #fff;
+}
+header .navbar-dark .navbar-nav .nav-link{
+    color: #087cfc;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* conteudo*/
+#conteudo{
+    padding: 60px;
+    
+
+}
+#conteudo h1{
+    color:#000;
+    font-weight: 300;
+    
+}
+
+#formulario .btn-warning{
+    color: #087cfc;
+}
+/*conteudo 2*/
+#conteudo2{
+    padding: 60px;
+}
+#conteudo2 h1{
+    color:#000;
+    font-weight: 300;
+}
+#btn2{
+    color:#087cfc;
+}
